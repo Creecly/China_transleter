@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Получение токена из переменных окружения
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("8050530823:AAFKuT-0BbVsPw9mR1JoTVxv-zSYhr46FGY")
 if not BOT_TOKEN:
     logger.error("BOT_TOKEN environment variable is not set!")
     exit(1)
