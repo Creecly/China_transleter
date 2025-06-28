@@ -1,15 +1,19 @@
 import os
 import logging
+from dotenv import load_dotenv  # Добавлен импорт
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
 from deep_translator import GoogleTranslator
+
+# Загрузка переменных окружения из .env файла
+load_dotenv()
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Получение токена из переменных окружения
-BOT_TOKEN = os.getenv("8050530823:AAFKuT-0BbVsPw9mR1JoTVxv-zSYhr46FGY")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 if not BOT_TOKEN:
     logger.error("BOT_TOKEN environment variable is not set!")
     exit(1)
