@@ -1,4 +1,8 @@
-aiogram==3.3
+aiogram==3.4
 deep-translator==1.11.4
 python-dotenv==1.0.1
-pydantic-core==2.16.2  # Явно указываем совместимую версию
+pydantic-core==2.14.6
+pydantic==2.5.3
+aiohttp==3.9.5
+typing-extensions==4.9.0
+attrs==25.3.0
